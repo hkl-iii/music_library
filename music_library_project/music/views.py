@@ -25,7 +25,7 @@ class Songlist(APIView):
 
 class SongDetail(APIView):
 
-    def get_object(self, request, pk):
+    def get_object(self, pk):
         try:
             return Song.objects.get(pk=pk)
         except Song.DoesNotExist:
