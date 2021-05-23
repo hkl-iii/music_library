@@ -8,7 +8,7 @@ from rest_framework import status
 
 
 # Create your views here.
-class Songlist(APIView):
+class SongList(APIView):
 
     def get(self, request):
         song = Song.objects.all()
